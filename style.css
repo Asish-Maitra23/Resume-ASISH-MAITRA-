@@ -1,16 +1,28 @@
-div{
+/* utility class */
+
+.rounded-2 {
+    border-radius: 2rem;
+}
+
+.rounded-4 {
+    border-radius: 4rem;
+}
+
+div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container{
+
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -19,21 +31,24 @@ body{
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-.container .left_side{
+
+.container .left_side {
     position: relative;
     background: #003147;
     padding: 40px;
 }
-img{
+
+img {
     position: relative;
     max-width: 150px;
     min-height: 150px;
     object-fit: cover;
     /* border-radius: 70px; */
 }
-.profileText{
+
+.profileText {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,10 +56,11 @@ img{
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 /* .profileText .image{
 
 } */
-.profileText h2{
+.profileText h2 {
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
@@ -52,62 +68,76 @@ img{
     text-align: center;
     line-height: 1.4em;
 }
-.profileText h2 span{
+
+.profileText h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
-.contactInfo{
+
+.contactInfo {
     padding-top: 40px;
 }
-.title{
+
+.title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-.contactInfo ul{
+
+.contactInfo ul {
     position: relative;
 }
-.contactInfo ul li{
+
+.contactInfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
 }
-.contactInfo ul li .icon{
+
+.contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #b1dff5;
 }
-.contactInfo ul li span{
+
+.contactInfo ul li span {
     color: #fff;
     font-weight: 300;
 }
-.contactInfo.Education li{
+
+.contactInfo.Education li {
     margin-bottom: 15px;
 }
-.contactInfo.Education h5{
+
+.contactInfo.Education h5 {
     color: #b1dff5;
     font-weight: 500;
     text-decoration-line: underline;
 }
-.contactInfo.Education h4:nth-child(2){
+
+.contactInfo.Education h4:nth-child(2) {
     color: #fff;
     font-weight: 500;
 }
-.contactInfo.Education h4{
+
+.contactInfo.Education h4 {
     color: #fff;
     font-weight: 300;
 }
-.contactInfo.language .title{
+
+.contactInfo.language .title {
     color: #003147;
 }
-.contactInfo.language .text{
+
+.contactInfo.language .text {
     color: #848c99;
 }
-.contactInfo.language .bengaliPercent{
+
+.contactInfo.language .bengaliPercent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -115,16 +145,8 @@ img{
     display: block;
     margin-top: 5px;
 }
-.contactInfo.language .englishPercent{
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    border-radius: 40px;
-    margin-top: 5px;
-}
-.contactInfo.language .hindiPercent{
+
+.contactInfo.language .englishPercent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -132,22 +154,33 @@ img{
     display: block;
     margin-top: 5px;
 }
-.contactInfo.language .bengaliPercent div{
+
+.contactInfo.language .hindiPercent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .bengaliPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.contactInfo.language .englishPercent div{
+
+.contactInfo.language .englishPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
-    border-radius: 40px;
 }
-.contactInfo.language .hindiPercent div{
+
+.contactInfo.language .hindiPercent div {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,29 +189,33 @@ img{
 }
 
 
-.container .right_side{
+.container .right_side {
     position: relative;
     background: #fff;
     padding: 40px;
 }
-.about{
+
+.about {
     margin-bottom: 50px;
 }
-.about:last-child{
+
+.about:last-child {
     margin-bottom: 0;
 }
-.title2{
+
+.title2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-p{
+
+p {
     color: #333;
 }
 
 
-.about_skills .box{
+.about_skills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -186,53 +223,14 @@ p{
     justify-content: center;
     align-items: center;
 }
-.about_skills .box h4{
+
+.about_skills .box h4 {
     text-transform: uppercase;
     color: #848c99;
     font-weight: 500;
 }
 
-.about_skills .htmlPercent{
-    position: relative;
-    width: 50%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-.about_skills .cssPercent{
-    position: relative;
-    width: 50%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-.about_skills .cPercent{
-    position: relative;
-    width: 50%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-.about_skills .cpPercent{
-    position: relative;
-    width: 50%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-.about_skills .mwPercent{
-    position: relative;
-    width: 50%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-.about_skills .mePercent{
+.about_skills .htmlPercent {
     position: relative;
     width: 50%;
     height: 6px;
@@ -241,71 +239,125 @@ p{
     margin-top: 5px;
 }
 
-.about_skills .htmlPercent div{
+.about_skills .cssPercent {
+    position: relative;
+    width: 50%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.about_skills .cPercent {
+    position: relative;
+    width: 50%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.about_skills .cpPercent {
+    position: relative;
+    width: 50%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.about_skills .mwPercent {
+    position: relative;
+    width: 50%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.about_skills .mePercent {
+    position: relative;
+    width: 50%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.about_skills .htmlPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about_skills .cssPercent div{
+
+.about_skills .cssPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about_skills .cPercent div{
+
+.about_skills .cPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about_skills .cpPercent div{
+
+.about_skills .cpPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about_skills .mwPercent div{
+
+.about_skills .mwPercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about_skills .mePercent div{
+
+.about_skills .mePercent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about_interest ul{
+
+.about_interest ul {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.about_interest ul li{
+
+.about_interest ul li {
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px 0;
 }
-.about_interest ul li .fa{
+
+.about_interest ul li .fa {
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
 }
 
-@media (max-width: 1000px){
-    .container{
+@media (max-width: 1000px) {
+    .container {
         margin: 10px;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .about_interest ul{
-        grid-template-columns: repeat(2,1fr);
+
+    .about_interest ul {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
